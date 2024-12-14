@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ფორმის ვალიდაცია</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="registration-form" novalidate>
+    <label for="full-name">სრული სახელი:</label>
+    <input type="text" id="full-name" name="full-name" required>
+    <span class="error" id="name-error"></span>
+
+    <label for="email">ელ. ფოსტა:</label>
+    <input type="email" id="email" name="email" required>
+    <span class="error" id="email-error"></span>
+
+    <label for="password">პაროლი:</label>
+    <input type="password" id="password" name="password" required>
+    <span class="error" id="password-error"></span>
+
+    <label for="confirm-password">პაროლის დადასტურება:</label>
+    <input type="password" id="confirm-password" name="confirm-password" required>
+    <span class="error" id="confirm-password-error"></span>
+
+    <label for="age">ასაკი:</label>
+    <input type="number" id="age" name="age" required>
+    <span class="error" id="age-error"></span>
+
+    <button type="submit">გაგზავნა</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
